@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noDataFound">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="86dp"
+        android:src="@drawable/oops_clipart">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</com.google.android.material.card.MaterialCardView>

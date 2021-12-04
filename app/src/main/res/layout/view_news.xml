@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTop"
+        android:layout_width="393dp"
+        android:layout_height="109dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/sonalogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_new"
+            android:layout_width="277dp"
+            android:layout_height="92dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/ivprofile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="33dp"
+            android:layout_height="27dp"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintBottom_toBottomOf="@+id/clTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toEndOf="@id/title_new"
+            app:layout_constraintTop_toTopOf="@+id/ivprofile"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivpost"
+        android:layout_width="395dp"
+        android:layout_height="444dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@id/clTop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <ru.embersoft.expandabletextview.ExpandableTextView
+        android:id="@+id/ivmessage"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:etv_animationTime="20"
+        app:etv_expandLines="5"
+        app:etv_showLine="false"
+        app:etv_textContentColor="@color/black"
+        app:etv_textContentSize="15.5sp"
+        app:etv_textExpand="show more"
+        app:etv_textShrink="show less"
+        app:etv_textStateColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivpost" />
+
+
+    <ImageView
+        android:id="@+id/ivlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_thumb_up_24"
+        app:layout_constraintTop_toBottomOf="@id/ivmessage"
+        android:padding="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/like_txt"
+        android:layout_width="49dp"
+        android:layout_height="18dp"
+        android:text="likes"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivshare"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toEndOf="@+id/ivlike"
+        app:layout_constraintTop_toBottomOf="@id/ivmessage" />
+
+    <ImageView
+        android:id="@+id/ivshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_baseline_share_24"
+        app:layout_constraintStart_toEndOf="@id/like_txt"
+        app:layout_constraintTop_toBottomOf="@id/ivmessage"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <TextView
+        android:id="@+id/ivDate"
+        android:layout_width="74dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="140dp"
+        android:text="Date"
+        app:layout_constraintBottom_toTopOf="@+id/ivTime"
+        app:layout_constraintStart_toEndOf="@+id/ivshare"
+        app:layout_constraintTop_toBottomOf="@+id/ivmessage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/ivTime"
+        android:layout_width="74dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="4dp"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivshare"
+        app:layout_constraintTop_toBottomOf="@+id/ivDate" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

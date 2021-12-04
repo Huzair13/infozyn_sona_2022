@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bot_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item android:id="@+id/bot_feed"
+        android:title="Feed"
+        android:icon="@drawable/ic_fwwd"/>
+    <item android:id="@+id/bot_location"
+        android:title="Location"
+        android:icon="@drawable/ic_baseline_location_on_24"/>
+</menu>

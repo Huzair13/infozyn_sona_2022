@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_white"
+    android:layout_height="match_parent"
+    tools:context=".AboutSona">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sonaTextTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:padding="25dp"
+                android:text="SONA COLLEGE OF TECHNOLOGY,SALEM"
+                android:textAlignment="center"
+                android:textColor="@color/Bright_Red"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sonaInfoTextTop"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+
+                android:text="Sona College of Technology (Autonomous) is a private college in India located in Salem, Tamilnadu, India.
+It was established in 1997 by Thiru. M.S. Chockalingam (Founder Chairman) and gained autonomous status in 2012
+"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sonaTextTop" />
+
+            <TextView
+                android:id="@+id/textRanking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/aclonica"
+                android:text="Rankings"
+                android:textAlignment="center"
+                android:textColor="@color/Bright_Red"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sonaInfoTextTop" />
+
+            <TextView
+                android:id="@+id/textRankingDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="The National Institutional Ranking Framework (NIRF) ranked it 150 among engineering colleges in 2020"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textRanking"/>
+            <ImageView
+                android:id="@+id/nirf_logo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/nirf_rank_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textRankingDetail"/>
+
+            <TextView
+                android:id="@+id/TextDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Departments"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Bright_Red"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:fontFamily="@font/aclonica"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nirf_logo"/>
+
+            <LinearLayout
+                android:id="@+id/cse_dep_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TextDepartment"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cse_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Computer Science and \nEngineering"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cse_logo"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IT_dep_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cse_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/IT_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Information Technology"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngit"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ADS_dep_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/IT_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ADS_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Artificial Intelligence and Data Science"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngai"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ECE_dep_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ADS_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ECE_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Electronic and Communication Engineering"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngece"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/EEE_dep_text"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ECE_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/EEE_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Electrical and Electronic Engioneering"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngeee"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FT_dep_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/EEE_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/FT_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Fashion Technology"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngft"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MECHdep_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/FT_dep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/MECH_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Mechanical Engineering"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngmech"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Civil_dep_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/MECHdep_text"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/civil_text"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Civil Engineering"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pngcivil"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/Click_me_text_loc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/baumans"
+
+                android:text="CLICK BELOW TO GET THE LOCATION"
+                android:textColor="#3895D3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Civil_dep_text" />
+
+
+            <ImageView
+                android:id="@+id/googleMap"
+                android:layout_width="match_parent"
+                android:layout_height="253dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:onClick="process"
+                app:srcCompat="@drawable/map_image"
+                app:layout_constraintTop_toBottomOf="@id/Click_me_text_loc" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

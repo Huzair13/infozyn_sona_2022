@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/amita_bold</item>
+        <item>@font/aref_ruqaa_bold</item>
+        <item>@font/audiowide</item>
+        <item>@font/baloo</item>
+        <item>@font/baumans</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bigshot_one</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/coiny</item>
+    </array>
+</resources>

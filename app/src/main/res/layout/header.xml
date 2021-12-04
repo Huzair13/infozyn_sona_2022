@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:gravity="bottom">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profile_image"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="133dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/avatar_profile" />
+
+    <TextView
+        android:id="@+id/UserNameDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="Sona Infozyn"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/UserEmailDash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.sonatech.ac.in"
+        android:textSize="18sp" />
+</LinearLayout>
