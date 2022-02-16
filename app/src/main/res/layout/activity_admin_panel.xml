@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/cut_card"
-tools:context=".AdminPanel">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card"
+    tools:context=".AdminPanel">
 
     <TextView
         android:id="@+id/texview"
@@ -20,304 +21,311 @@ tools:context=".AdminPanel">
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold|italic" />
-<GridLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_below="@id/texview"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginBottom="20dp"
-    android:columnCount="2"
-    android:rowCount="3">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addNotice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:layout_below="@id/texview"
+        android:layout_margin="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2"
+        android:rowCount="3">
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-            <ImageView
-                android:id="@+id/upload_notice"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:padding="1dp"
-                android:src="@drawable/upload_notice_png_clipart"
-                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <ImageView
+                    android:id="@+id/upload_notice"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/notice_png"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:padding="5dp"
-                android:textAlignment="center"
-                android:text="Upload Notice"
-                android:fontFamily="@font/berkshire_swash"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addGalleryImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="0"
-        android:layout_rowWeight="1"
-        android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Upload Notice"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addGalleryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-            <ImageView
-                android:id="@+id/upload_image"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:padding="1dp"
-                android:src="@drawable/upload_image_png"
-                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <ImageView
+                    android:id="@+id/upload_image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/upload_image_png"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/berkshire_swash"
-                android:padding="5dp"
-                android:text="Upload Image"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Upload Image"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
 
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addEbook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addEbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/upload_ebook"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/upload_pdf_png_clipart"
-                android:padding="1dp"
-                tools:ignore="ContentDescription" />
+                <ImageView
+                    android:id="@+id/upload_ebook"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/upload_pdf_png_clipart"
+                    tools:ignore="ContentDescription" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/berkshire_swash"
-                android:padding="5dp"
-                android:text="Upload EBook"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Upload EBook"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/faculty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="1"
-        android:layout_rowWeight="1"
-        android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/faculty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/update_faculty"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/upload_faculty_png_clipart"
-                android:padding="1dp"
-                tools:ignore="ContentDescription" />
+                <ImageView
+                    android:id="@+id/update_faculty"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/faculty_png_clipart"
+                    tools:ignore="ContentDescription" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/berkshire_swash"
-                android:padding="5dp"
-                android:text="Update Faculty"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Update Faculty"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/delete_notice_admin_panel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="2"
-        android:layout_rowWeight="1"
-        android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/delete_notice_admin_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/delete_notice"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/delete_notice_png_clipart"
-                android:padding="1dp"
-                tools:ignore="ContentDescription" />
+                <ImageView
+                    android:id="@+id/delete_notice"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/delete_notice_png_clipart"
+                    tools:ignore="ContentDescription" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/berkshire_swash"
-                android:padding="5dp"
-                android:text="Delete Notice"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Delete Notice"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="2"
-        android:layout_rowWeight="1"
-        android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:layout_gravity="fill"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:cardUseCompatPadding="true">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logout_admin_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
 
-        <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/logout"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/log_out_png_clipart"
-                android:padding="1dp"
-                tools:ignore="ContentDescription" />
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="1dp"
+                    android:src="@drawable/out_png"
+                    tools:ignore="ContentDescription" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/grey" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/berkshire_swash"
-                android:padding="5dp"
-                android:text="Log Out"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="14dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-</GridLayout>
-</RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/berkshire_swash"
+                    android:padding="5dp"
+                    android:text="Log Out"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</LinearLayout>

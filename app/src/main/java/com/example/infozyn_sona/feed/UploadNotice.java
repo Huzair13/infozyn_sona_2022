@@ -12,12 +12,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.infozyn_sona.AdminPanel;
 import com.example.infozyn_sona.R;
+import com.example.infozyn_sona.gallery.UploadImage;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -37,8 +42,11 @@ public class UploadNotice extends AppCompatActivity {
 
     private ImageView noticeImageView;
     private CardView addimage;
+    private Spinner noticeCategory;
+    private Spinner noticeYear;
     private EditText noticeTitle,noticeMessage;
     private Button uploadNoticeBtn;
+    private String category,year;
 
     private final int REQ=1;
     private Bitmap bitmap;
@@ -55,8 +63,42 @@ public class UploadNotice extends AppCompatActivity {
 
         reference= FirebaseDatabase.getInstance().getReference();
         storageReference= FirebaseStorage.getInstance().getReference();
+        noticeYear=findViewById(R.id.noticeYear);
+        noticeCategory=findViewById(R.id.notice_category);
 
         pd=new ProgressDialog(this);
+        
+        String[] items1=new String[]{"Select Year","2018","2019","2020","2021","2022"};
+        
+        String[] items=new String[]{"Select Category","FineArts","Upcoming Events","Awards","Funded Projects"};
+        
+        noticeYear.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,items1));
+        noticeCategory.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item,items));
+        
+        
+        noticeCategory.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                category=noticeCategory.getSelectedItem().toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        
+        noticeYear.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                year=noticeYear.getSelectedItem().toString();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         addimage = findViewById(R.id.addimage);
         noticeImageView=findViewById(R.id.noticeImageView);
@@ -77,7 +119,13 @@ public class UploadNotice extends AppCompatActivity {
                 if(noticeTitle.getText().toString().isEmpty()){
                     noticeTitle.setError("Empty");
                     noticeTitle.requestFocus();
-                }else if(bitmap == null){
+                }else if(year.equals("Select Year")){
+                    Toast.makeText(UploadNotice.this, "Please select Notice Year", Toast.LENGTH_SHORT).show();
+                }
+                else if(category.equals("Select Category")){
+                    Toast.makeText(UploadNotice.this, "Please Select Notice Category", Toast.LENGTH_SHORT).show();
+                }
+                else if(bitmap == null){
                     uploadData();
                 }else{
                     uploadImage();
@@ -87,7 +135,9 @@ public class UploadNotice extends AppCompatActivity {
     }
 
     private void uploadData() {
-        dbRef=reference.child("Notice");
+        
+        
+        dbRef=reference.child("Notice").child(year).child(category);
         final String uniquekey = dbRef.push().getKey();
 
         String title =noticeTitle.getText().toString();
@@ -108,6 +158,9 @@ public class UploadNotice extends AppCompatActivity {
             public void onSuccess(Void unused) {
                 pd.dismiss();
                 Toast.makeText(UploadNotice.this, "Notice Uploaded", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(UploadNotice.this, AdminPanel.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

@@ -19,6 +19,33 @@
             android:title="Admin Panel"/>
     </group>
 
+    <item android:title="News Feed">
+        <menu>
+            <group android:orderInCategory="@integer/config_navAnimTime">
+                <item
+                    android:id="@+id/News_2018"
+                    android:icon="@drawable/ic_fwwd"
+                    android:title="News 2018"/>
+                <item
+                    android:id="@+id/News_2019"
+                    android:icon="@drawable/ic_fwwd"
+                    android:title="News 2019"/>
+                <item
+                    android:id="@+id/News_2020"
+                    android:icon="@drawable/ic_fwwd"
+                    android:title="News 2020"/>
+                <item
+                    android:id="@+id/News_2021"
+                    android:icon="@drawable/ic_fwwd"
+                    android:title="News 2021"/>
+                <item
+                    android:id="@+id/News_2022"
+                    android:icon="@drawable/ic_fwwd"
+                    android:title="News 2022"/>
+            </group>
+        </menu>
+    </item>
+
         <item android:title="Profile">
             <menu>
                 <group android:checkableBehavior="single">

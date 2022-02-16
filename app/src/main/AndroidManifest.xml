@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.infozyn_sona">
+    package="com.example.infozyn_sona" >
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,12 +12,222 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Infozyn_sona">
+        android:theme="@style/Theme.Infozyn_sona" >
         <activity
-            android:name=".UpdateFeedActivity"
+            android:name=".Admin_Access"
             android:exported="true" />
         <activity
-            android:name=".feed.DeleteNoticeActivity"
+            android:name=".feed.delete.Feed2018_d.FeedDel2018_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2018.UpdateFeed2018_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2018_d.FeedDel2018_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2018.UpdateFeed2018_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2018_d.FeedDel2018_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2018.UpdateFeed2018_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2018_d.del_2018_cat"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2018_d.FeedDel2018_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2018.UpdateFeed2018_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2019_d.FeedDel2019_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2019.UpdateFeed2019_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2019_d.FeedDel2019_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2019.UpdateFeed2019_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2019_d.FeedDel2019_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2019.UpdateFeed2019_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2019_d.del_2019_cat"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2019_d.FeedDel2019_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2019.UpdateFeed2019_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2020_d.FeedDel2020_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2020.UpdateFeed2020_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2020_d.FeedDel2020_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2020.UpdateFeed2020_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2020_d.FeedDel2020_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2020.UpdateFeed2020_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2020_d.del_2020_cat"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2020_d.FeedDel2020_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2020.UpdateFeed2020_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2022_d.FeedDel2022_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2022.UpdateFeed2022_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2022_d.FeedDel2022_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2022.UpdateFeed2022_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2022.UpdateFeed2022_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2022_d.FeedDel2022_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2021_d.FeedDel2021_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2021.UpdateFeed2021_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2021_d.FeedDel2021_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2021.UpdateFeed2021_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2021_d.FeedDel2021_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2021.UpdateFeed2021_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2022_d.del_2022_cat"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2021_d.del_2021_cat"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.FeedDel_category"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2021.UpdateFeed2021_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2021_d.FeedDel2021_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.feed2022.Feed2022_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.feed2022.Feed2022_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.feed2022.Feed2022_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.feed2022.Feed2022_Upcoming_event"
+            android:exported="true" />
+        <activity
+            android:name=".feed.feed2022.Category_2022"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2021.Feed2021_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2021.Feed2021_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2021.Feed2021_Upcoming_event"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2021.Category_2021"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2021.Feed2021_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2020.Feed2020_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2020.Feed2020_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2020.Feed2020_Upcoming_Events"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2020.Feed2020_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2019.Feed2019_FundedProjects"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2019.Feed2019_Awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2020.Category_2020"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2018.Feed2018_FundedProject"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2018.Feed2018_awards"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2019.Category_2019"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2019.Feed2019_Upcoming_event"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2018.Category"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2018.Feed_2018_Upcoming_event"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2019.Feed_2019"
+            android:exported="true" />
+        <activity
+            android:name=".feed.Feed2018.Feed_2018"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Update_Feed.update_2022.UpdateFeed2022_FineArts"
+            android:exported="true" />
+        <activity
+            android:name=".feed.delete.Feed2022_d.FeedDel2022_FineArts"
             android:exported="true" />
         <activity
             android:name=".faculty.DisplayTeacherActivity"
@@ -50,9 +260,6 @@
             android:name=".feed.UploadNotice"
             android:exported="true" />
         <activity
-            android:name=".feed.News"
-            android:exported="true" />
-        <activity
             android:name=".AdminPanel"
             android:exported="true" />
         <activity
@@ -61,7 +268,7 @@
         <activity
             android:name=".Splash_Screen"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,7 +283,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

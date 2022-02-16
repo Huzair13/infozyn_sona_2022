@@ -13,20 +13,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.infozyn_sona.AboutSona;
 import com.example.infozyn_sona.AdminPanel;
+import com.example.infozyn_sona.Admin_Access;
+import com.example.infozyn_sona.feed.Feed2021.Category_2021;
+import com.example.infozyn_sona.feed.Feed2018.Category;
+import com.example.infozyn_sona.feed.Feed2019.Category_2019;
 import com.example.infozyn_sona.faculty.DisplayTeacherActivity;
 import com.example.infozyn_sona.MainActivity;
 import com.example.infozyn_sona.Pro_Activity;
 import com.example.infozyn_sona.R;
 import com.example.infozyn_sona.UserDetails;
-import com.example.infozyn_sona.feed.DeleteNoticeActivity;
-import com.example.infozyn_sona.feed.News;
+import com.example.infozyn_sona.feed.Feed2020.Category_2020;
+import com.example.infozyn_sona.feed.feed2022.Category_2022;
 import com.example.infozyn_sona.gallery.Gallery;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -219,7 +222,7 @@ public class home_page extends AppCompatActivity implements NavigationView.OnNav
                 startActivity(Intent.createChooser(intent, "Share using"));
                 break;
             case R.id.bot_feed:
-                startActivity(new Intent(home_page.this,News.class));
+                startActivity(new Intent(home_page.this, Category_2022.class));
                 break;
             case R.id.bot_location:
                 startActivity(new Intent(home_page.this, AboutSona.class));
@@ -228,10 +231,25 @@ public class home_page extends AppCompatActivity implements NavigationView.OnNav
                 startActivity(new Intent(home_page.this, Pro_Activity.class));
                 break;
             case R.id.nav_faculty:
-                startActivity(new Intent(home_page.this,    DisplayTeacherActivity.class));
+                startActivity(new Intent(home_page.this, DisplayTeacherActivity.class));
                 break;
             case R.id.nav_admin:
-                startActivity(new Intent(home_page.this, AdminPanel.class));
+                startActivity(new Intent(home_page.this, Admin_Access.class));
+                break;
+            case R.id.News_2018:
+                startActivity(new Intent(home_page.this, Category.class));
+                break;
+            case R.id.News_2019:
+                startActivity(new Intent(home_page.this, Category_2019.class));
+                break;
+            case R.id.News_2020:
+                startActivity(new Intent(home_page.this, Category_2020.class));
+                break;
+            case R.id.News_2021:
+                startActivity(new Intent(home_page.this, Category_2021.class));
+                break;
+            case R.id.News_2022:
+                startActivity(new Intent(home_page.this, Category_2022.class));
                 break;
         }
 

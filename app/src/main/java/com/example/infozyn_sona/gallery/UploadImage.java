@@ -19,7 +19,10 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.infozyn_sona.AdminPanel;
 import com.example.infozyn_sona.R;
+import com.example.infozyn_sona.faculty.UpdateFaculty;
+import com.example.infozyn_sona.faculty.UpdateTeacherAcivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -144,6 +147,9 @@ public class UploadImage extends AppCompatActivity {
             public void onSuccess(Void unused) {
                 pd.dismiss();
                 Toast.makeText(UploadImage.this, "Image Uploaded Successfully", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(UploadImage.this, AdminPanel.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override

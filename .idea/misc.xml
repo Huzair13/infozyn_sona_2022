@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/bg.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/bl_gradient.xml" value="0.2703125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/circle_green.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/circle_orange.xml" value="0.21203703703703702" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/circle_pink.xml" value="0.21203703703703702" />
@@ -21,21 +22,81 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/round_border.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/round_curve_bg.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/round_gl_background.xml" value="0.21296296296296297" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/selected_.xml" value="0.2703125" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/selected_tab.xml" value="0.2703125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/selector.xml" value="0.22777777777777777" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/splash_backgroud.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/tab_rect.xml" value="0.2703125" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/tab_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/tab_text_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/yellow_gradient.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/drawable/yg_color.xml" value="0.2703125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_about_sct.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_about_sona.xml" value="0.264" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_add_teacher.xml" value="0.22192028985507245" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_admin_panel.xml" value="0.4" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_admin_acces_code_log_in.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_admin_access.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_admin_panel.xml" value="0.264" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_category.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_category2019.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_category2020.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_category2021.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_category2022.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_del2018_cat.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_del2019_cat.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_del2020_cat.xml" value="0.2128623188405797" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_del2021_cat.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_del2022_cat.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_delete_notice.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_display_faculty.xml" value="0.176" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_display_teacher.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2018.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2018_awards.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2018_funded_project.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2018_upcoming_event.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2018_upcoming_events.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2019.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2019_awards.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2019_funded_projects.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2019_upcoming_event.xml" value="0.21739130434782608" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2020_awards.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2020_fine_arts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2020_funded_projects.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2020_upcoming_events.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2021_awards.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2021_fine_arts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2021_funded_projects.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2021_upcoming_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2022_awards.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2022_fine_arts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2022_funded_projects.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed2022_upcoming_event.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2018_awards.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2018_fine_arts.xml" value="0.2" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2018_funded_projects.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2018_upcoming_events.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2019_awards.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2019_fine_arts.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2019_funded_projects.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2019_upcoming_events.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2020_awards.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2020_fine_arts.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2020_funded_projects.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2020_upcoming_events.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2021_awards.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2021_fine_arts.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2021_funded_projects.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2021_upcoming_events.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2022_awards.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2022_funded_projects.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del2022_upcoming_events.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_feed_del_category.xml" value="0.264" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_gallery.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_google_signin.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_news.xml" value="0.176" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_news.xml" value="0.264" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_news2018.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_pro.xml" value="0.2" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_profile_display.xml" value="0.176" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_profile_sona.xml" value="0.2" />
@@ -44,13 +105,33 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_splashscreen.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_faculty.xml" value="0.152" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed.xml" value="0.21014492753623187" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2018_awards.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2018_fine_arts.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2018_funded_projects.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2018_upcoming_events.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2019_awards.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2019_fine_arts.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2019_funded_projects.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2019_upcoming_events.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2020_awards.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2020_fine_arts.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2020_funded_projects.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2020_upcoming_events.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2021_awards.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2021_fine_arts.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2021_funded_projects.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2021_upcoming_events.xml" value="0.23052536231884058" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2022_awards.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2022_funded_projects.xml" value="0.2223731884057971" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_feed2022_upcoming_events.xml" value="0.2223731884057971" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_teacher.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_teacher2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_update_teacher_acivity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_upload_image.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_upload_notice.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_upload_notice.xml" value="0.176" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/activity_upload_pdf.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/bottomnavi.xml" value="0.2028985507246377" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/custom_tab.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/delete_feed_view.xml" value="0.13990825688073394" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/drawer_background.xml" value="0.2028985507246377" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/layout/expand_text_view.xml" value="0.19746376811594202" />
@@ -74,6 +155,7 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/menu/navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/infozyn_sona/app/src/main/res/xml/root_preferences.xml" value="0.2" />
       </map>
     </option>
   </component>
